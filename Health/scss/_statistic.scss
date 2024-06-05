@@ -1,0 +1,18 @@
+.statistic {
+  background-color: $accent1;
+  background-image: url(../img/header.jpg);
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: multiply;
+}
+.statistic__container {
+  display: flex;
+  justify-content: space-between;
+  padding: 9rem;
+}
+.figure__title {
+  color: white;
+  font-size: 1.7rem;
+  margin-top: 2rem;
+  text-align: center;
+}

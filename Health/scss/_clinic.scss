@@ -1,0 +1,96 @@
+.clinic {
+  display: flex;
+  background-color: rgb(239, 239, 239);
+  position: relative;
+
+  &__img {
+    width: 20%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  &__description {
+    width: 70%;
+    padding-left: 20%;
+    padding-right: 5%;
+  }
+  &__description-title {
+    margin-bottom: 2rem;
+    color: $graydark;
+  }
+  &__description-span {
+    color: black;
+  }
+  &__description-text {
+    margin-bottom: 2rem;
+    color: $graydark;
+  }
+  &__description-icon {
+    display: flex;
+  }
+  &__description-icon-text {
+    margin-left: 1rem;
+    margin-bottom: 2rem;
+    color: $graydark;
+  }
+  &__icon {
+    font-size: 3rem;
+    color: $accent1;
+    margin-top: 5px;
+  }
+  &__hours {
+    width: 30%;
+    background-color: $accent1;
+    color: white;
+    padding: 5rem 0;
+  }
+  &__hours-title {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+}
+.table {
+  background-color: lighten($accent1, $amount: 5%);
+  padding: 2rem;
+  width: 100%;
+  border-collapse: collapse;
+  line-height: 3.5;
+  &__tr {
+    text-align: center;
+    border-bottom: 2px solid $accent1;
+  }
+  &__th {
+  }
+  &__td {
+  }
+}
+@media (max-width: 992px) {
+  .clinic {
+    flex-direction: column;
+  }
+  .clinic__description {
+    padding-left: 2rem;
+  }
+  .clinic__img {
+    display: none;
+  }
+
+  .clinic__container {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .clinic__description,
+  .clinic__hours {
+    width: 100%;
+    padding-block: 5rem;
+  }
+}
